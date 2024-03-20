@@ -1,0 +1,32 @@
+<form (ngSubmit)="submitForm()">
+    <label for="id">ID:</label><br>
+    <input type="number" id="id" name="Id" [(ngModel)]="customer.id"><br>
+    
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="Name" [(ngModel)]="customer.name"><br>
+    
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" id="lastName" name="LastName" [(ngModel)]="customer.lastName"><br>
+    
+    <label for="governmentId">Government ID:</label><br>
+    <input type="text" id="governmentId" name="GovernmentId" [(ngModel)]="customer.governmentId"><br>
+    
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="Age" [(ngModel)]="customer.age"><br>
+    
+    <label for="sex">Sex (M/F):</label><br>
+    <select id="sex" name="Sex" [(ngModel)]="customer.sex">
+        <option value="">Select...</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+        <!-- Add more options as needed -->
+    </select><br>
+    
+    <label for="tel">Telephone:</label><br>
+    <input type="tel" id="tel" name="Tel" [(ngModel)]="customer.tel"><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="Email" [(ngModel)]="customer.email"><br>
+    
+    <input type="submit" value="Submit">
+</form>

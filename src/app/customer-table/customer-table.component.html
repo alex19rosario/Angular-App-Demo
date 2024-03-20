@@ -1,0 +1,27 @@
+<button (click) = "refresh()">Refresh</button>
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Government Id</th>
+        <th>Age</th>
+        <th>Sex</th>
+        <th>Tel</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers">
+        <td>{{ customer.id }}</td>
+        <td>{{ customer.name }}</td>
+        <td>{{ customer.lastName }}</td>
+        <td>{{ customer.governmentId }}</td>
+        <td>{{ customer.age }}</td>
+        <td>{{ customer.sex }}</td>
+        <td>{{ customer.tel }}</td>
+        <td>{{ customer.email }}</td>
+      </tr>
+    </tbody>
+  </table>
